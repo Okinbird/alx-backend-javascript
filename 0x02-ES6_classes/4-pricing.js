@@ -1,4 +1,3 @@
-/* eslint-disable */
 import Currency from './3-currency';
 
 export default class Pricing {
@@ -35,7 +34,7 @@ export default class Pricing {
 
   static convertPrice(amount, conversionRate) {
     if (typeof amount || conversionRate !== 'number') {
-      throw TypeError('Amount and conversionRate must be a number');
+      throw new Error('Amount and conversionRate must be a number');
     }
     return amount * conversionRate;
   }
