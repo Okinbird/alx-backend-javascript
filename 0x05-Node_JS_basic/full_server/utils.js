@@ -25,10 +25,8 @@ function readDatabase(path) {
       delete fields.field;
 
       resolve(fields);
-
-      // return fields;
     });
   });
 }
 
-module.exports = readDatabase;
+export default readDatabase;
