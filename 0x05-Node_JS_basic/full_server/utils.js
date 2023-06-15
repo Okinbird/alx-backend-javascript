@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function readDatabase (path) {
+function readDatabase(path) {
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf8', (error, data) => {
       if (error) {
@@ -26,7 +26,7 @@ function readDatabase (path) {
 
       resolve(fields);
 
-      return fields;
+      // return fields;
     });
   });
 }
